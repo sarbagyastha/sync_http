@@ -26,6 +26,10 @@ abstract class SyncHttpClient {
   /// Send a PUT request to the provided URL.
   static SyncHttpClientRequest putUrl(uri) =>
       new SyncHttpClientRequest._('PUT', uri, true);
+  
+  /// Send a PATCH request to the provided URL.
+  static SyncHttpClientRequest patchUrl(uri) =>
+      new SyncHttpClientRequest._('PATCH', uri, true);
 }
 
 /// HTTP request for a synchronous client connection.
